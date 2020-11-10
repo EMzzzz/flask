@@ -55,7 +55,7 @@ def nlp():
         def pos_tagging(text):
             words = nltk.word_tokenize(text)
             tagged = nltk.pos_tag(words)
-            return 'The result of using pos tagging is %s' & tagged
+            return 'The result of using pos tagging is ', tagged
         
         def remove_pun(text):
             from nltk.tokenize import RegexpTokenizer
